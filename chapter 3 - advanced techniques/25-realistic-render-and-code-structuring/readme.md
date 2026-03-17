@@ -1,6 +1,6 @@
 # Lesson 25 — Realistic Render & Code Structuring
 
-> **Live:** {link}
+> Live: https://three-realistic-render-sigma.vercel.app/
 
 **[← Back to monorepo](../../README.md)**
 

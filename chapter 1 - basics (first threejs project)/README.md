@@ -1,6 +1,6 @@
 # First Three.js Project
 
-> **Live:** {link}
+> Live: https://first-threejs-project-sooty.vercel.app/
 
 **[← Back to monorepo](../README.md)**
 

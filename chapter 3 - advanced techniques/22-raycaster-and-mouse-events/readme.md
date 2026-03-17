@@ -1,6 +1,6 @@
 # Lesson 22 — Raycaster & Mouse Events
 
-> **Live:** {link}
+> Live: https://three-raycast-mouse.vercel.app/
 
 **[← Back to monorepo](../../README.md)**
 

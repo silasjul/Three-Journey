@@ -1,6 +1,6 @@
 # Lesson 17 — Particles
 
-> **Live:** {link}
+> Live: https://three-particles-snowy.vercel.app/
 
 **[← Back to monorepo](../../README.md)**
 

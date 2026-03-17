@@ -1,6 +1,6 @@
 # Lesson 15 — Shadows
 
-> **Live:** {link}
+> Live: https://threejs-shadows-iota.vercel.app/
 
 **[← Back to monorepo](../../README.md)**
 

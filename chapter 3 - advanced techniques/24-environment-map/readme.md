@@ -1,6 +1,6 @@
 # Lesson 24 — Environment Map
 
-> **Live:** {link}
+> Live: https://three-environment-map.vercel.app/
 
 **[← Back to monorepo](../../README.md)**
 
