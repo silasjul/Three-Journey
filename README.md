@@ -23,7 +23,7 @@ My progress through [Three.js Journey](https://threejs-journey.com/) by Bruno Si
 
 ### First Three.js Project
 
-> Live: https://google.com
+> Live: https://first-threejs-project-sooty.vercel.app/
 > Source: [`chapter 1 - basics`](./chapter%201%20-%20basics%20(first%20threejs%20project)/)
 
 The first scene — renderer, camera, geometries, materials, textures, 3D text, OrbitControls, GSAP animations, lil-gui debug panel, and an environment map all in one go.
