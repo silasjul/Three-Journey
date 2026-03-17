@@ -9,7 +9,6 @@ My progress through [Three.js Journey](https://threejs-journey.com/) by Bruno Si
 - [Chapter 1 — Basics](#chapter-1--basics)
   - [First Three.js Project](#first-threejs-project)
 - [Chapter 2 — Classic Techniques](#chapter-2--classic-techniques)
-  - [Lesson 14 — Lights](#lesson-14--lights)
   - [Lesson 15 — Shadows](#lesson-15--shadows)
   - [Lesson 17 — Particles](#lesson-17--particles)
 - [Chapter 3 — Advanced Techniques](#chapter-3--advanced-techniques)
@@ -37,20 +36,6 @@ The first scene — renderer, camera, geometries, materials, textures, 3D text, 
 ---
 
 ## Chapter 2 — Classic Techniques
-
-### Lesson 14 — Lights
-
-> Live: https://google.com
-> Source: [`14-lights`](./chapter%202%20-%20classic%20techniques/14-lights/)
-
-Every light type Three.js has — `AmbientLight`, `DirectionalLight`, `PointLight`, `SpotLight`, `RectAreaLight`, `HemisphereLight`. The main takeaway: lights are expensive, use as few as possible. Light helpers make positioning much less guesswork.
-
-**Key learnings:**
-- Each light type has a different cost and use case — `DirectionalLight` for sun-like light, `PointLight` for bulbs, `SpotLight` for a cone beam
-- Lights are one of the biggest performance hits in a scene
-- Light helpers (`DirectionalLightHelper`, `PointLightHelper`, etc.) are invaluable for understanding what's happening
-
----
 
 ### Lesson 15 — Shadows
 
