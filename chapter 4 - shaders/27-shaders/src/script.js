@@ -21,25 +21,33 @@ const scene = new THREE.Scene();
  */
 const textureLoader = new THREE.TextureLoader();
 
+const danishFlagTexture = textureLoader.load("./textures/flag-danish.jpg");
+danishFlagTexture.colorSpace = THREE.SRGBColorSpace;
+
 /**
  * Test mesh
  */
 // Geometry
-const geometry = new THREE.PlaneGeometry(1, 1, 32, 32);
-
-const count = geometry.attributes.position.count;
-const randoms = new Float32Array(count);
-for (let i = 0; i < count; i++) {
-    randoms[i] = Math.random();
-}
-geometry.setAttribute("aRandom", new THREE.BufferAttribute(randoms, 1));
+const geometry = new THREE.PlaneGeometry(1.2, 1, 50, 50);
 
 // Material
-const material = new THREE.RawShaderMaterial({
+const material = new THREE.ShaderMaterial({
     vertexShader: vertexShader,
     fragmentShader: fragmentShader,
     side: THREE.DoubleSide,
+    uniforms: {
+        uSinFrequency: { value: new THREE.Vector2(8.0, 4.0) },
+        uTime: { value: 0.0 },
+        uColor: { value: new THREE.Color("blue") },
+        uTexture: { value: danishFlagTexture },
+        uElevation: { value: new THREE.Vector2(2.1, 0.75) },
+    },
 });
+
+gui.add(material.uniforms.uSinFrequency.value, "x").min(0).max(20).step(0.1).name("Sin Frequency X")
+gui.add(material.uniforms.uSinFrequency.value, "y").min(0).max(20).step(0.1).name("Sin Frequency Y")
+gui.add(material.uniforms.uElevation.value, "x").min(0).max(10).step(0.01).name("Elevation Color Scale")
+gui.add(material.uniforms.uElevation.value, "y").min(0).max(1).step(0.01).name("Elevation Color Offset")
 
 // Mesh
 const mesh = new THREE.Mesh(geometry, material);
@@ -100,6 +108,7 @@ const clock = new THREE.Clock();
 
 const tick = () => {
     const elapsedTime = clock.getElapsedTime();
+    material.uniforms.uTime.value = elapsedTime;
 
     // Update controls
     controls.update();
