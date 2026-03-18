@@ -172,25 +172,23 @@ If you click the link you might notice that this model looks really good, which 
 
 #### Shader 1 — Rose Crystal
 
-> Live: <!-- TODO: add Vercel URL -->
+> Live: https://three-shadow-rose-crystal.vercel.app/
 > Source: [`shader1-rose-crystal`](./chapter%204%20-%20shaders/27-shaders/) on branch `shader1-rose-crystal`
 
-<!-- TODO: describe what you built and what was interesting about it -->
+Here I learned about RawShaderMaterial and how you can manipulate the vertex's positions and how you can also manipulate the colors with fragmentshader. I can now also pass values though the shaders using either attributes and varying or uniform values. Using varying variables you can bass anything from the vertex shader to the fragment shader.
 
 **Key learnings:**
-<!-- TODO: fill in -->
+ - Create your own shaders using Shader or RawShader materials.
+ - Pass variables from your js to you glsl scripts using attributes, varying and uniform.
 
 ---
 
 #### Shader 2 — Danish Flag
 
-> Live: <!-- TODO: add Vercel URL -->
+> Live: https://three-shader-flag-five.vercel.app/
 > Source: [`flag-shader`](./chapter%204%20-%20shaders/27-shaders/) on branch `flag-shader`
 
-<!-- TODO: describe what you built and what was interesting about it -->
-
-**Key learnings:**
-<!-- TODO: fill in -->
+Here I took things one step further and passed time as a uniform amongst other values and used GUI to tweak them to manipulate the shape and colors of my flag. This was very insightful and showed me how you can create shapes and tweak colors in a way that wouldnt normally be possible using regular materials.
 
 ---
 
