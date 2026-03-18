@@ -16,6 +16,9 @@ My progress through [Three.js Journey](https://threejs-journey.com/) by Bruno Si
   - [Lesson 22 — Raycaster & Mouse Events](#lesson-22--raycaster--mouse-events)
   - [Lesson 24 — Environment Map](#lesson-24--environment-map)
   - [Lesson 25 — Realistic Render & Code Structuring](#lesson-25--realistic-render--code-structuring)
+- [Chapter 4 — Shaders](#chapter-4--shaders)
+  - [Lesson 27 — Shader 1 — Rose Crystal](#shader-1--rose-crystal)
+  - [Lesson 27 — Shader 2 — Danish Flag](#shader-2--danish-flag)
 
 ---
 
