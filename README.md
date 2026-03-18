@@ -16,6 +16,8 @@ My progress through [Three.js Journey](https://threejs-journey.com/) by Bruno Si
   - [Lesson 22 — Raycaster & Mouse Events](#lesson-22--raycaster--mouse-events)
   - [Lesson 24 — Environment Map](#lesson-24--environment-map)
   - [Lesson 25 — Realistic Render & Code Structuring](#lesson-25--realistic-render--code-structuring)
+- [Chapter 4 — Shaders](#chapter-4--shaders)
+  - [Lesson 27 — Shaders](#lesson-27--shaders)
 
 ---
 
@@ -161,6 +163,34 @@ If you click the link you might notice that this model looks really good, which 
 - Splitting the app into classes with a shared event bus makes the code way easier to extend without breaking things
 - The singleton pattern (`App.instance`) lets any class reach the root without prop-drilling
 - `?debug` in the URL to conditionally load the GUI keeps production clean
+
+---
+
+## Chapter 4 — Shaders
+
+### Lesson 27 — Shaders
+
+#### Shader 1 — Rose Crystal
+
+> Live: <!-- TODO: add Vercel URL -->
+> Source: [`shader1-rose-crystal`](./chapter%204%20-%20shaders/27-shaders/) on branch `shader1-rose-crystal`
+
+<!-- TODO: describe what you built and what was interesting about it -->
+
+**Key learnings:**
+<!-- TODO: fill in -->
+
+---
+
+#### Shader 2 — Danish Flag
+
+> Live: <!-- TODO: add Vercel URL -->
+> Source: [`flag-shader`](./chapter%204%20-%20shaders/27-shaders/) on branch `flag-shader`
+
+<!-- TODO: describe what you built and what was interesting about it -->
+
+**Key learnings:**
+<!-- TODO: fill in -->
 
 ---
 
