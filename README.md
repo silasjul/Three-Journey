@@ -19,6 +19,7 @@ My progress through [Three.js Journey](https://threejs-journey.com/) by Bruno Si
 - [Chapter 4 — Shaders](#chapter-4--shaders)
   - [Lesson 27 — Shader 1 — Rose Crystal](#shader-1--rose-crystal)
   - [Lesson 27 — Shader 2 — Danish Flag](#shader-2--danish-flag)
+  - [Lesson 28 — Shader Patterns](#lesson-28--shader-patterns)
 
 ---
 
@@ -190,6 +191,21 @@ Here I learned about RawShaderMaterial and how you can manipulate the vertex's p
 > Source: [`flag-shader`](./chapter%204%20-%20shaders/27-shaders/) on branch `flag-shader`
 
 Here I took things one step further and passed time as a uniform amongst other values and used GUI to tweak them to manipulate the shape and colors of my flag. This was very insightful and showed me how you can create shapes and tweak colors in a way that wouldnt normally be possible using regular materials.
+
+---
+
+### Lesson 28 — Shader Patterns
+
+> Live: <!-- TODO: add Vercel URL -->
+> Source: [`28-shader-patterns`](./chapter%204%20-%20shaders/28-shader-patterns/)
+
+This lesson was all about using pure math inside GLSL to generate complex visual patterns from scratch — no textures, no external assets, just coordinates and equations. Went through a huge range of techniques: gradients, step functions, modulo tiling, distance fields, and Perlin noise. Out of the 50 patterns covered, patterns 40 and 50 stood out the most so I animated them and wired up a GUI to tweak them in real time. Really eye-opening to see how much you can produce with just a fragment shader and some math.
+
+**Key learnings:**
+ - You can make awesome looking patterns using basic math such as sin and cos.
+ - If you add time as a uniform or similar you have a value you can use to animate.
+ - Perlin noise is mindblowing and the patterns you can make from this is really cool.
+ - I love that you can get seudo random results meaning they look chaotic and random but using the same values gives you the same result everytime which is perfect for making terrain with math.
 
 ---
 
