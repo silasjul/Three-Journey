@@ -196,7 +196,7 @@ Here I took things one step further and passed time as a uniform amongst other v
 
 ### Lesson 28 — Shader Patterns
 
-> Live: <!-- TODO: add Vercel URL -->
+> Live: https://three-shader-patterns-plane.vercel.app/
 > Source: [`28-shader-patterns`](./chapter%204%20-%20shaders/28-shader-patterns/)
 
 This lesson was all about using pure math inside GLSL to generate complex visual patterns from scratch — no textures, no external assets, just coordinates and equations. Went through a huge range of techniques: gradients, step functions, modulo tiling, distance fields, and Perlin noise. Out of the 50 patterns covered, patterns 40 and 50 stood out the most so I animated them and wired up a GUI to tweak them in real time. Really eye-opening to see how much you can produce with just a fragment shader and some math.
