@@ -5,13 +5,14 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment, PivotControls } from "@react-three/drei";
 import { useControls, folder } from "leva";
 import FlightHelmet from "@/components/FlightHelmet";
+import Lightsaber from "@/components/Lightsaber";
 import Light from "@/components/Light";
 import { useState } from 'react';
 
 export default function Home() {
   const [isDragging, setIsDragging] = useState(false);
 
-  const { mode, exposure, scale, enabled, files } = useControls({
+  const { mode, exposure, enabled, scale, files, model } = useControls({
     toneMapping: folder({
       mode: {
         value: THREE.ReinhardToneMapping as THREE.ToneMapping,
@@ -54,6 +55,14 @@ export default function Home() {
         },
       },
     }),
+    model: folder({
+      model: {
+        options: {
+          "Light Saber": <Lightsaber />,
+          "Flight Helmet": <FlightHelmet />,
+        },
+      },
+    }),
   });
 
   return (
@@ -67,7 +76,7 @@ export default function Home() {
         <Environment files={files} background />
         <Light />
         <PivotControls enabled={enabled} scale={scale} onDragStart={() => setIsDragging(true)} onDragEnd={() => setIsDragging(false)}>
-          <FlightHelmet />
+          {model}
         </PivotControls>
       </Canvas>
     </div>
