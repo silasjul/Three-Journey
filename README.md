@@ -20,6 +20,8 @@ My progress through [Three.js Journey](https://threejs-journey.com/) by Bruno Si
   - [Lesson 27 — Shader 1 — Rose Crystal](#shader-1--rose-crystal)
   - [Lesson 27 — Shader 2 — Danish Flag](#shader-2--danish-flag)
   - [Lesson 28 — Shader Patterns](#lesson-28--shader-patterns)
+- [Chapter 7 — React Three Fiber](#chapter-7--react-three-fiber)
+  - [First R3F App — Flight Helmet Viewer](#first-r3f-app--flight-helmet-viewer)
 
 ---
 
@@ -206,6 +208,26 @@ This lesson was all about using pure math inside GLSL to generate complex visual
  - If you add time as a uniform or similar you have a value you can use to animate.
  - Perlin noise is mindblowing and the patterns you can make from this is really cool.
  - I love that you can get seudo random results meaning they look chaotic and random but using the same values gives you the same result everytime which is perfect for making terrain with math.
+
+---
+
+## Chapter 7 — React Three Fiber
+
+### First R3F App — Star Wars hdri maps
+
+> Live: 
+> Source: [`first-r3f-app`](./chapter%207%20-%20r3f/first-r3f-app/)
+
+Coming from a React background, R3F felt like heaven. Everything I already knew — components, hooks, state — just works, but now it renders a 3D scene. No manual render loops, no imperative scene management, just JSX. This first project is a Flight Helmet viewer with HDR environment maps, a configurable directional light, tone mapping controls, and an interactive pivot gizmo to reposition the model.
+
+Learned drei as the go-to helper library — it abstracts all the boilerplate Three.js patterns (orbit controls, environment loading, GLTF loading, light helpers) into clean, composable components. Leva replaced lil-gui as the debug panel and it fits right into the React model: `useControls` returns live values and re-renders the component when you move a slider, no event listeners needed.
+
+**Key learnings:**
+- R3F's `<Canvas>` sets up the renderer and scene — everything inside is declarative Three.js as JSX
+- Drei's `<OrbitControls>` and `<PivotControls>` are drop-in replacements for the manual setup I was used to writing
+- `useGLTF` loads and caches a model in one line; traversing the scene graph to enable shadows still works exactly as in vanilla Three.js
+- Leva's `useControls` with `folder()` grouping is the cleanest debug panel I've used — feels native to React
+- `useHelper` from drei lets you conditionally attach a `DirectionalLightHelper` with a single hook call instead of manually adding and removing it from the scene
 
 ---
 
